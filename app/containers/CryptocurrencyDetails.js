@@ -54,7 +54,7 @@ export default class CryptocurrencyDetails extends React.Component {
   }
 
   componentDidMount() {
-    this.selectedFiatCurrency = AppSettings.defaultCurrency;
+    this.selectedFiatCurrency = GlobalStore.currentlySelectedCurrency;
     this.fetchData();
   }
 
@@ -77,7 +77,6 @@ export default class CryptocurrencyDetails extends React.Component {
   render () {
     return (
       <View style={styles.container}>  
-
 
         <ScrollView ref='_scrollView' automaticallyAdjustContentInsets={false} scrollEventThrottle={200}>
         {this.cannotConnect

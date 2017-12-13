@@ -33,7 +33,7 @@ export default class MainPage extends React.Component {
   }
 
   componentDidMount() {
-    this.selectedFiatCurrency = AppSettings.defaultCurrency;
+    this.selectedFiatCurrency = GlobalStore.currentlySelectedCurrency;
     this.fetchData();
   }
 

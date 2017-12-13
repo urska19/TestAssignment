@@ -6,3 +6,6 @@
 2. enter TestAssignment directory `cd TestAssignment`
 3. run `npm install` and `react-native link`
 4. run on iOS simulator using `react-native run-ios`
+
+### How to run tests?
+1. run `npm test`
